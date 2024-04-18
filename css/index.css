@@ -1,0 +1,66 @@
+/* Img */
+
+.container-img {
+  text-align: center;
+  margin: 0 0 20px;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 300px;
+}
+
+/* Toggles Menu */
+
+.menu {
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: aquamarine;
+  padding: 10px 0px;
+}
+
+.switch {
+  margin: 0px 10px;
+}
+
+section {
+  display: none;
+}
+
+.show-section {
+  display: block;
+}
+
+/* Calculator section */
+.container-numbers {
+  display: flex;
+  align-items: center;
+}
+
+.result-calculator {
+  margin: 0;
+}
+
+.element-number {
+  margin: 0px 10px;
+}
+
+/* Para Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Para Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.container-buttons {
+  margin: 15px 0px 15px 10px !important;
+}
+
+.container-buttons > button {
+  margin-right: 10px;
+}
