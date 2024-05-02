@@ -10,6 +10,15 @@ calculatorToggle.addEventListener("change", ()=>{
   }
 })
 
+const arrayToggle = document.getElementById("arrayToggle");
+
+arrayToggle.addEventListener("change", ()=>{
+  if (arrayToggle.checked) {
+    document.getElementById("sectionArray").classList.add("show-section");
+  } else {
+    document.getElementById("sectionArray").classList.remove("show-section");
+  }
+})
 
 
 
