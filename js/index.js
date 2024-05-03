@@ -46,3 +46,38 @@ const restarNumeros = () => {
 const botonRestar = document.getElementById("botonRestar");
 
 botonRestar.addEventListener("click", restarNumeros)
+
+
+/* Array Section */
+
+let arrayTexto = ["a", "b", "c"];
+
+const lista = document.getElementById("lista-array");
+
+function mostrarArray(array) {
+  lista.innerHTML = ""
+  console.log(array);
+
+  array.forEach(element => {
+    const li = document.createElement("li"); // Crea un nuevo elemento li
+    li.textContent = element
+    lista.appendChild(li)
+  });
+}
+
+mostrarArray(arrayTexto)
+
+const agregarAlFinal = () => {
+  const inputText = document.getElementById("text").value;
+  
+  if (inputText) {
+    arrayTexto.push(inputText)
+  }
+
+  mostrarArray(arrayTexto)
+}
+
+const quitarDelFinal = () => {
+  arrayTexto.pop();
+  mostrarArray(arrayTexto)
+}
